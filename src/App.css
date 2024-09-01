@@ -1,0 +1,43 @@
+#root {
+  background-color: var(--background-color);
+  color: var(--text);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Dark and Light Mode Variables */
+.dark-mode {
+  --text: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+  --button-background-color: #1a1a1a;
+}
+
+.light-mode {
+  --text: #213547;
+  --background-color: #ffffff;
+  --button-background-color: #f9f9f9;
+}
+
+.card {
+  background-color: var(--button-background-color);
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add subtle border for better contrast */
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
